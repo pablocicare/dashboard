@@ -1,0 +1,315 @@
+$VeryDarkBlue: #1e202a;
+$VeryDarkBlue2: #1f212e;
+$DarkDesaturatedBlue: #252a41;
+$DesaturatedBlue: #8b97c6;
+$White: #ffffff;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 8%;
+    background-color: $VeryDarkBlue;
+    color: $White;
+    min-height: 100vh;
+    transition: 0.5s;
+
+    &.active {
+        background-color: #ffffff;
+        color: #1e202a;
+
+        .card, .card-overview {
+            background-color: #f0f2fa;
+        }
+
+        .text {
+            color: #63687e;
+        }
+    }
+
+    .text {
+        color: $DesaturatedBlue;
+    }
+}
+
+
+.title-h2 {
+    font-size: 1.4em;
+    padding-bottom: 5px;
+}
+
+.title-text {
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+
+.div-line {
+    height: 1px;
+    background-color: #8188a8;
+}
+// @media screen and (min-width: 768px) {
+//     .div-line {
+//         display: none;
+//     }
+
+//     .main-hero {
+//         display: flex;
+//     }
+// }
+.switch-div {
+    padding: 20px 0 40px;
+    display: flex;
+    justify-content: space-between;
+
+    .switch-span {
+        font-weight: 700;
+    }
+
+    #toggle {
+        position: relative;
+        display: block;
+        width: 32px;
+        height: 16px;
+        border-radius: 16px;
+        background: linear-gradient(#378fe6, #3eda82);
+        transition: 0.5s;
+        cursor: pointer;
+
+        &.active {
+            background: #aeb3cb;
+        }
+
+        .indicator {
+            position: absolute;
+            top: 0;
+            left: 16px;
+            width: 16px;
+            height: 16px;
+            background: #1e202a;
+            border-radius: 50%;
+            transform: scale(0.85);
+            transition: 0.5s;
+        }
+        
+        &.active .indicator {
+            left: 0;
+            background: #ffffff;
+        }
+    }
+
+}
+
+
+
+.card {
+    text-align: center;
+    background-color: $DarkDesaturatedBlue;
+    padding: 10%;
+    border-radius: 5px;
+    margin-bottom: 9%;
+
+    .card-user{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            font-size: 12px;
+            font-weight: 700;
+        }
+        
+        .fab {
+            font-size: 1.5em;
+            padding-right: 10px;
+        }
+    }
+
+
+    h3 {
+        font-weight: 700;
+        font-size: 3.5em;
+        margin: 0;
+        padding: 10px 0 0;
+    }
+
+    .card-follow {
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 5px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .today {
+        font-size: 12px;
+        padding: 25px 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-weight: 700;
+
+        p{
+            margin: 0;
+        }
+
+        .fas {
+            padding-right: 5px;
+        }
+    }
+}
+
+.fb-card {
+    border-top: solid 4px #198ff5;
+
+    .fab {
+        color: #198ff5;
+    }
+
+    .today {
+        color: #1db489;
+    }
+}
+
+.tw-card {
+    border-top: solid 4px #1ca0f2;
+
+    .fab {
+        color: #1ca0f2;
+    }
+
+    .today {
+        color: #1db489;
+    }
+}
+
+.ig-card {
+    border-top: solid 4px #df4996;
+
+    .fab {
+        color: #df4996;
+    }
+
+    .today {
+        color: #1db489;
+    }
+}
+
+.yt-card {
+    border-top: solid 4px #c4032a;
+
+    .fab {
+        color: #c4032a;
+    }
+
+    .today {
+        color: #dc414c;
+        align-items: flex-start;
+    }
+}
+
+.title-over {
+    padding: 30px 0 25px;
+}
+
+.card-overview {
+    background-color: $DarkDesaturatedBlue;
+    border-radius: 5px;
+    padding: 8%;
+    margin-bottom: 6%;
+
+    .card-title {
+        padding-bottom: 25px;
+    }
+
+    .card-title, .card-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .fab {
+            font-size: 1.5em;
+        }
+
+        .text {
+            font-weight: 700;
+        }
+
+        .info-num {
+            font-size: 2.3em;
+            font-weight: 700
+        }
+
+        .info-por {
+            span {
+                font-size: 12px;
+                font-weight: 700;
+            }
+
+            .fas {
+                font-size: 12px;
+            }
+        }
+    }
+
+    &.card-1 {
+
+        .card-title {
+            .fab {
+                color: #198ff5;
+            }
+        }
+        .info-por {
+            color: #1db489;
+        }
+    }
+
+    &.card-2 {
+        .card-title {
+            .fab {
+                color: #198ff5;
+            }
+        }
+        .info-por {
+            color: #dc414c;
+        }
+    }
+
+    &.card-3, &.card-4 {
+        .card-title {
+            .fab {
+                color: #df4996;
+            }
+        }
+        .info-por {
+            color: #1db489;
+        }
+    }
+
+    &.card-5, &.card-6 {
+        .card-title {
+            .fab {
+                color: #1ca0f2;
+            }
+        }
+        .info-por {
+            color: #1db489;
+        }
+    }
+
+    &.card-7, &.card-8 {
+        .card-title {
+            .fab {
+                color: #c4032a;
+            }
+        }
+        .info-por {
+            color: #dc414c;
+        }
+    }
+}
+

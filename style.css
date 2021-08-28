@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 8%;
+  background-color: #1e202a;
+  color: #ffffff;
+  min-height: 100vh;
+  transition: 0.5s;
+}
+body.active {
+  background-color: #ffffff;
+  color: #1e202a;
+}
+body.active .card, body.active .card-overview {
+  background-color: #f0f2fa;
+}
+body.active .text {
+  color: #63687e;
+}
+body .text {
+  color: #8b97c6;
+}
+
+.title-h2 {
+  font-size: 1.4em;
+  padding-bottom: 5px;
+}
+
+.title-text {
+  padding-bottom: 20px;
+  font-weight: 700;
+}
+
+.div-line {
+  height: 1px;
+  background-color: #8188a8;
+}
+
+.switch-div {
+  padding: 20px 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.switch-div .switch-span {
+  font-weight: 700;
+}
+.switch-div #toggle {
+  position: relative;
+  display: block;
+  width: 32px;
+  height: 16px;
+  border-radius: 16px;
+  background: linear-gradient(#378fe6, #3eda82);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.switch-div #toggle.active {
+  background: #aeb3cb;
+}
+.switch-div #toggle .indicator {
+  position: absolute;
+  top: 0;
+  left: 16px;
+  width: 16px;
+  height: 16px;
+  background: #1e202a;
+  border-radius: 50%;
+  transform: scale(0.85);
+  transition: 0.5s;
+}
+.switch-div #toggle.active .indicator {
+  left: 0;
+  background: #ffffff;
+}
+
+.card {
+  text-align: center;
+  background-color: #252a41;
+  padding: 10%;
+  border-radius: 5px;
+  margin-bottom: 9%;
+}
+.card .card-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .card-user span {
+  font-size: 12px;
+  font-weight: 700;
+}
+.card .card-user .fab {
+  font-size: 1.5em;
+  padding-right: 10px;
+}
+.card h3 {
+  font-weight: 700;
+  font-size: 3.5em;
+  margin: 0;
+  padding: 10px 0 0;
+}
+.card .card-follow {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 5px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.card .today {
+  font-size: 12px;
+  padding: 25px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-weight: 700;
+}
+.card .today p {
+  margin: 0;
+}
+.card .today .fas {
+  padding-right: 5px;
+}
+
+.fb-card {
+  border-top: solid 4px #198ff5;
+}
+.fb-card .fab {
+  color: #198ff5;
+}
+.fb-card .today {
+  color: #1db489;
+}
+
+.tw-card {
+  border-top: solid 4px #1ca0f2;
+}
+.tw-card .fab {
+  color: #1ca0f2;
+}
+.tw-card .today {
+  color: #1db489;
+}
+
+.ig-card {
+  border-top: solid 4px #df4996;
+}
+.ig-card .fab {
+  color: #df4996;
+}
+.ig-card .today {
+  color: #1db489;
+}
+
+.yt-card {
+  border-top: solid 4px #c4032a;
+}
+.yt-card .fab {
+  color: #c4032a;
+}
+.yt-card .today {
+  color: #dc414c;
+  align-items: flex-start;
+}
+
+.title-over {
+  padding: 30px 0 25px;
+}
+
+.card-overview {
+  background-color: #252a41;
+  border-radius: 5px;
+  padding: 8%;
+  margin-bottom: 6%;
+}
+.card-overview .card-title {
+  padding-bottom: 25px;
+}
+.card-overview .card-title, .card-overview .card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-overview .card-title .fab, .card-overview .card-info .fab {
+  font-size: 1.5em;
+}
+.card-overview .card-title .text, .card-overview .card-info .text {
+  font-weight: 700;
+}
+.card-overview .card-title .info-num, .card-overview .card-info .info-num {
+  font-size: 2.3em;
+  font-weight: 700;
+}
+.card-overview .card-title .info-por span, .card-overview .card-info .info-por span {
+  font-size: 12px;
+  font-weight: 700;
+}
+.card-overview .card-title .info-por .fas, .card-overview .card-info .info-por .fas {
+  font-size: 12px;
+}
+.card-overview.card-1 .card-title .fab {
+  color: #198ff5;
+}
+.card-overview.card-1 .info-por {
+  color: #1db489;
+}
+.card-overview.card-2 .card-title .fab {
+  color: #198ff5;
+}
+.card-overview.card-2 .info-por {
+  color: #dc414c;
+}
+.card-overview.card-3 .card-title .fab, .card-overview.card-4 .card-title .fab {
+  color: #df4996;
+}
+.card-overview.card-3 .info-por, .card-overview.card-4 .info-por {
+  color: #1db489;
+}
+.card-overview.card-5 .card-title .fab, .card-overview.card-6 .card-title .fab {
+  color: #1ca0f2;
+}
+.card-overview.card-5 .info-por, .card-overview.card-6 .info-por {
+  color: #1db489;
+}
+.card-overview.card-7 .card-title .fab, .card-overview.card-8 .card-title .fab {
+  color: #c4032a;
+}
+.card-overview.card-7 .info-por, .card-overview.card-8 .info-por {
+  color: #dc414c;
+}
+
+/*# sourceMappingURL=style.css.map */
