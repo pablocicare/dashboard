@@ -46,21 +46,31 @@ body {
 .title-text {
     padding-bottom: 20px;
     font-weight: 700;
+    font-size: 0.8em;
 }
 
 .div-line {
     height: 1px;
     background-color: #8188a8;
 }
-// @media screen and (min-width: 768px) {
-//     .div-line {
-//         display: none;
-//     }
+@media screen and (min-width: 992px) {    
+    .div-line {
+        display: none;
+    }
 
-//     .main-hero {
-//         display: flex;
-//     }
-// }
+    .main-hero {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+
+    .switch-div {
+        .switch-span {
+            padding-right: 15px;
+        }
+    }
+}
+
 .switch-div {
     padding: 20px 0 40px;
     display: flex;
@@ -68,6 +78,7 @@ body {
 
     .switch-span {
         font-weight: 700;
+        font-size: 0.8em;
     }
 
     #toggle {
@@ -105,19 +116,18 @@ body {
 }
 
 
-
 .card {
     text-align: center;
     background-color: $DarkDesaturatedBlue;
     padding: 10%;
     border-radius: 5px;
     margin-bottom: 9%;
-
+    
     .card-user{
         display: flex;
         justify-content: center;
         align-items: center;
-
+        
         span {
             font-size: 12px;
             font-weight: 700;
@@ -128,15 +138,15 @@ body {
             padding-right: 10px;
         }
     }
-
-
+    
+    
     h3 {
         font-weight: 700;
         font-size: 3.5em;
         margin: 0;
         padding: 10px 0 0;
     }
-
+    
     .card-follow {
         text-transform: uppercase;
         font-weight: 400;
@@ -144,7 +154,7 @@ body {
         font-size: 14px;
         font-weight: 400;
     }
-
+    
     .today {
         font-size: 12px;
         padding: 25px 0 0;
@@ -152,14 +162,26 @@ body {
         justify-content: center;
         align-items: flex-end;
         font-weight: 700;
-
+        
         p{
             margin: 0;
         }
-
+        
         .fas {
             padding-right: 5px;
         }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .cards-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card {
+        min-width: 23%;
+        padding: 4%;
     }
 }
 
@@ -313,3 +335,15 @@ body {
     }
 }
 
+@media screen and (min-width: 992px) {
+    .card-info-wrap,.card-info-wrap-2 {
+        display: flex;
+        justify-content: space-between;
+
+        .card-overview {
+            min-width: 23%;
+            padding: 3%;
+            margin-bottom: 3%;
+        }
+    }
+}
