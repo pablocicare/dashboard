@@ -102,6 +102,11 @@ body .text {
   padding: 10%;
   border-radius: 5px;
   margin-bottom: 9%;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.05);
 }
 .card .card-user {
   display: flex;
@@ -205,6 +210,11 @@ body .text {
   border-radius: 5px;
   padding: 8%;
   margin-bottom: 6%;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.card-overview:hover {
+  transform: scale(1.05);
 }
 .card-overview .card-title {
   padding-bottom: 25px;

@@ -122,6 +122,12 @@ body {
     padding: 10%;
     border-radius: 5px;
     margin-bottom: 9%;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.05);
+    }
     
     .card-user{
         display: flex;
@@ -243,6 +249,12 @@ body {
     border-radius: 5px;
     padding: 8%;
     margin-bottom: 6%;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.05);
+    }
 
     .card-title {
         padding-bottom: 25px;
